@@ -1,6 +1,7 @@
 package Calculator;
 
 import javax.swing.*;
+// https://examples.javacodegeeks.com/desktop-java/ide/intellij-gui-designer-example/
 
 public class Calculator extends JFrame {
     private JPanel JavaCalculator;
@@ -25,8 +26,8 @@ public class Calculator extends JFrame {
     private JButton clearButton;
     private JButton signButton;
     private JButton decimalButton;
-    private Double leftOperand;
-    private Double rightOperand;
+    private Double xOperand;
+    private Double yOperand;
     private Operation calcOperation;
 
     public Calculator(String title) {

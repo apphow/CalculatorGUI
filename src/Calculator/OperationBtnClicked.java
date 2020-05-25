@@ -8,7 +8,7 @@ public class OperationBtnClicked implements ActionListener {
 
     private Operation operation;
     private Operation calcOperation;
-    private Double leftOperand;
+    private Double xOperand;
     private JTextField results;
 
 
@@ -19,6 +19,6 @@ public class OperationBtnClicked implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         calcOperation = operation;
-        leftOperand = Double.valueOf(results.getText());
+        xOperand = Double.valueOf(results.getText());
     }
 }
