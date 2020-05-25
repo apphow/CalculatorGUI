@@ -13,9 +13,6 @@ public enum Operation {
 
     Operation(DoubleBinaryOperator operator) {
         this.operator = operator;
-    }
 
-    public DoubleBinaryOperator getOperator() {
-        return operator;
     }
 }

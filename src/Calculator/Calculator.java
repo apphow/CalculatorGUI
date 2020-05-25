@@ -57,6 +57,9 @@ public class Calculator extends JFrame {
         percentButton.addActionListener(new OperationBtnClicked(Operation.PERCENTAGE));
         equalsButton.addActionListener(new EqualBtnClicked());
         clearButton.addActionListener(new ClearBtnClicked());
+        signButton.addActionListener(new SignBtnClicked());
+        decimalButton.addActionListener(new DecimalBtnClicked());
+
     }
 
 
