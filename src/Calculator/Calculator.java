@@ -18,13 +18,16 @@ public class Calculator extends JFrame {
     private JButton addButton;
     private JButton subtractButton;
     private JButton multiplicationButton;
+    private JButton divisionButton;
+    private JButton percentButton;
     private JButton equalsButton;
     private JTextField Results;
     private JButton clearButton;
     private JButton signButton;
-    private JButton percentButton;
-    private JButton divisionButton;
     private JButton decimalButton;
+    private Double leftOperand;
+    private Double rightOperand;
+    private Operation calcOperation;
 
     public Calculator(String title) {
         super(title);
@@ -47,7 +50,13 @@ public class Calculator extends JFrame {
         a8Button1.addActionListener(new NumberBtnClicked(a8Button1.getText()));
         a9Button1.addActionListener(new NumberBtnClicked(a9Button1.getText()));
 
-
+        addButton.addActionListener(new OperationBtnClicked(Operation.ADDITION));
+        subtractButton.addActionListener(new OperationBtnClicked(Operation.SUBTRACTION));
+        multiplicationButton.addActionListener(new OperationBtnClicked(Operation.MULTIPLICATION));
+        divisionButton.addActionListener(new OperationBtnClicked(Operation.DIVISION));
+        percentButton.addActionListener(new OperationBtnClicked(Operation.PERCENTAGE));
+        equalsButton.addActionListener(new EqualBtnClicked());
+        clearButton.addActionListener(new ClearBtnClicked());
     }
 
 
